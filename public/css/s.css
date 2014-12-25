@@ -30,7 +30,11 @@ a:hover {
     color: #ff0;
     transition: color 0.4s linear 0s;
 } 
-
+.grid-container {
+    width: 40em;
+    margin: 0px auto;
+    overflow-x: hidden;
+}
 .f1 {font-size: 48px;}
 .f2 {font-size: 36px;}
 .brand{
