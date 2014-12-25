@@ -1,31 +1,25 @@
-::selection {
-	background: gold; /* Safari */
-	}
-::-moz-selection {
-	background: gold; /* Firefox */
+@charset "UTF-8";   /* Unicode UTF-8 */
+* ,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* Remove padding on objects widths */
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  min-height: 100%;
-  position: relative;
-}
-body {
-  color: #fff;
-  background: #111211;
-  font-size: 16px;
-  font-family: helvetica, arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 0 10px; }
-  margin-bottom: 50px;
-}
-
-footer{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+/* Basic Setup */
+html, body{
+      font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-stretch:normal;
+      font-size: 100%;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      line-height: 1.6em;
+      color: #fff;
+      background:#111211;
+} 
