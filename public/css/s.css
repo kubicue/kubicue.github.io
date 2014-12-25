@@ -1,0 +1,15 @@
+::selection {
+	background: gold; /* Safari */
+	}
+::-moz-selection {
+	background: gold; /* Firefox */
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+body {
+  color: #f3f3f3;
+  background: #111211;
+ 
