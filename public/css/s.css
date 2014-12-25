@@ -21,9 +21,15 @@ html, body{
       line-height: 1.6em;
       color: #fff;
       background:#111211;
+}
+
+a:hover {
+    color: #ff0;
+    transition: color 0.4s linear 0s;
 } 
 
 .f1 {font-size: 48px;}
+.f2 {font-size: 36px;}
 .brand{
   margin-top: 35px;
   margin-left: 20px;
