@@ -22,3 +22,9 @@ html, body{
       color: #fff;
       background:#111211;
 } 
+
+.f1 {font-size: 48px;}
+.brand{
+  margin-top: 35px;
+  margin-left: 20px;
+}
