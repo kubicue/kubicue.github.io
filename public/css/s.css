@@ -22,7 +22,10 @@ html, body{
       color: #fff;
       background:#111211;
 }
-
+a {
+    color: #fff;
+    text-decoration: none;
+}
 a:hover {
     color: #ff0;
     transition: color 0.4s linear 0s;
