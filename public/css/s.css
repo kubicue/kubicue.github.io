@@ -8,8 +8,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  font-family:Verdana,Geneva,sans-serif;
 }
 body {
-  color: #f3f3f3;
+  color: #fff;
   background: #111211;
  
