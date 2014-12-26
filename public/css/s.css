@@ -37,7 +37,15 @@ a:hover {
 }
 .f1 {font-size: 48px;}
 .f2 {font-size: 36px;}
+.f3 {font-size: 24px;}
+.bright {
+    color: #C8B715;
+}
 .brand{
   margin-top: 35px;
   margin-left: 20px;
+}
+.intro {
+    padding: 20px;
+    line-height: 1.3em;
 }
