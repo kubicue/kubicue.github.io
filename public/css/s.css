@@ -27,17 +27,76 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #ff0;
-    transition: color 0.4s linear 0s;
-} 
+    color: #ff0;  
+    -webkit-transition: color .6s linear;  
+    -moz-transition: color .6s linear;  
+    -o-transition: color .6s linear;  
+    -ms-transition: color .6s linear;  
+    transition: color .6s linear;
+}
+/* = base styles setup  */ 
 .grid-container {
     width: 40em;
     margin: 0px auto;
     overflow-x: hidden;
 }
-.f1 {font-size: 48px;}
-.f2 {font-size: 36px;}
-.f3 {font-size: 24px;}
+ ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+.f1 {
+  font-size: 48px; }
+
+.f2 {
+  font-size: 36px; }
+
+.f3 {
+  font-size: 24px; }
+
+.f4 {
+  font-size: 18px; }
+
+.f5 {
+  font-size: 12px; }
+/* =grid base adapting 640px/40.000em  */
+.grid-container {
+  width: 40.000em;
+  margin: 0 auto;
+  overflow-x: hidden;}
+@media (max-width: 30.000em) {
+  .grid-container {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 1em;
+   }
+  .grid-container > header {
+   font-size: medium;
+  }
+  .grid-container > section h2 {
+   font-size: large;
+  }
+  .grid-container > section h3 {
+   font-size: medium;
+   background: center #121214;
+  }
+}
 .vr {margin-bottom: 12.5px;}
 .bright {
     color: #C8B715;
