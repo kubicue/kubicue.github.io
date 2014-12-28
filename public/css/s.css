@@ -97,6 +97,19 @@ a img {
    background: center #121214;
   }
 }
+.cf:before,
+.cf:after {
+    content: " "; /* clear element: after */
+    display: table; /* clear display mode */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;/* For IE 6-7*/
+}
+
 .vr {margin-bottom: 12.5px;}
 .bright {
     color: #C8B715;
