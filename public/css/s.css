@@ -85,6 +85,7 @@ a img {
     max-width: 320px;
     display: block;
     margin: 0 auto 1em;
+    transition: background 0.3s ease;
    }
   .grid-container > header {
    font-size: medium;
