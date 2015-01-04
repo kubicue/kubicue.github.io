@@ -20,7 +20,8 @@ html, body{
       font-smoothing: antialiased;
       line-height: 1.6em;
       color: #fff;
-      background:#111211;
+      background:#111211 url(../img/map_bg.png);
+ 
 }
 a {
     color: #fff;
