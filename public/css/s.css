@@ -1,123 +1,90 @@
-@charset "UTF-8";   /* Unicode UTF-8 */
-* ,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  /* Remove padding on objects widths */
-  -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
+    transition: all 0.5s ease 0s;
 }
-/* Basic Setup */
-html, body{
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      font-stretch:normal;
-      font-size: 100%;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      font-smoothing: antialiased;
-      line-height: 1.6em;
-      color: #fff;
-      background: #111211;
+}
+html {
+	background: #242122;
+	font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+  -webkit-font-smoothing:antialiased;
+  -webkit-animation: color_change 1s infinite alternate;
+	-moz-animation: color_change 1s infinite alternate;
+	-ms-animation: color_change 1s infinite alternate;
+	-o-animation: color_change 1s infinite alternate;
+	animation: color_change 1s infinite alternate;
+}
+body {
+font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 400;
+forn-size: 100%;
+line-height: 1.80;
+color: #f1ffff;
+	margin:0
 }
 a {
-    color: #fff;
-    text-decoration: none;
+	color: gold;
+	text-decoration: none;
+  border-bottom: 2px solid white;
 }
-a:hover {
-    color: #ff0;  
-    -webkit-transition: color .6s linear;  
-    -moz-transition: color .6s linear;  
-    -o-transition: color .6s linear;  
-    -ms-transition: color .6s linear;  
-    transition: color .6s linear;
+ul {
+	list-style: none;
 }
-/* = base styles setup  */ 
-.grid-container {
-    width: 40em;
-    margin: 0px auto;
-    overflow-x: hidden;
+.block-container{
+max-width: 90%;
+z-index: 1;
+margin: 0px auto;
+padding-bottom: 50px;
 }
- ol, ul {
-  list-style: none; }
+.brand {
+  font-size: 3rem;
+  font-weight: bold;   
+}
+.bright{
+	color: gold;
+	font-weight: bolder;
+}
+.btn {
+padding: 0.5rem 1rem;
+border: 2px solid #222;
+color: #333;
+text-decoration: none;
+text-align: center;
+}
+.imp-copy {
+margin: 1.3rem 0px 0.5rem;
+font-weight: bold;
+font-size: 2rem;
+line-height: 1.46;
+}
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption, th, td {
+.textContainer {
+  position: relative;
   text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q, blockquote {
-  quotes: none; }
-
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
-
-a img {
-  border: none; }
-.f1 {
-  font-size: 48px; }
-
-.f2 {
-  font-size: 36px; }
-
-.f3 {
-  font-size: 24px; }
-
-.f4 {
-  font-size: 18px; }
-
-.f5 {
-  font-size: 12px; }
-/* =grid base adapting 640px/40.000em  */
-.grid-container {
-  width: 40.000em;
-  margin: 0 auto;
-  overflow-x: hidden;}
-@media (max-width: 30.000em) {
-  .grid-container {
-    max-width: 320px;
-    display: block;
-    margin: 0 auto 1em;
-    transition: background 0.3s ease;
-   }
-  .grid-container > header {
-   font-size: medium;
-  }
-  .grid-container > section h2 {
-   font-size: large;
-  }
-  .grid-container > section h3 {
-   font-size: medium;
-   background: center #121214;
-  }
-}
-.cf:before,
-.cf:after {
-    content: " "; /* clear element: after */
-    display: table; /* clear display mode */
+  font-size: 3rem;
+	font-weight: bold;
+  font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #fff;
+  line-height: 0.96;
+  min-height:4rem;
 }
 
-.cf:after {
-    clear: both;
+.jstext {
+  width: 100%;
+  padding-top: 3vh;
+  font-weight: bold;
 }
-.cf {
-    *zoom: 1;/* For IE 6-7*/
-}
-
-.vr {margin-bottom: 12.5px;}
-.bright {
-    color: #C8B715;
-}
-.brand{
-  margin-top: 35px;
-}
-.intro {
-    line-height: 1.3em;
+.jstext:after {
+  content: "_";
+  animation: blinking 1s infinite;
+  -webkit-animation: blinking 1s infinite;
+  -moz-animation: blinking 1s infinite;
+  -o-animation: blinking 1s infinite;
+  position: absolute;
+  -webkit-transform: translate(10%, -10%);
+  -moz-transform: translate(10%, -10%);
+  -ms-transform: translate(10%, -10%);
+  transform: translate(10%, -10%);
 }
